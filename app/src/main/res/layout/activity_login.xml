@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:gravity="center"-->
+        <!--&gt;-->
+        <!--<com.airbnb.lottie.LottieAnimationView-->
+            <!--android:layout_marginTop="120dp"-->
+            <!--android:id="@+id/barcodeAnimation"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--app:lottie_fileName="message_arrow.json"-->
+            <!--app:lottie_loop="false"-->
+            <!--app:lottie_autoPlay="true"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="40dp"
+        >
+
+        <TextView
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:fontFamily="@font/righteous"
+            android:text="Cariin"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="center"
+            />
+        <TextView
+            android:layout_marginBottom="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans"
+            android:text="Cari Barang hilang"
+            android:textAlignment="center"
+            android:textColor="@color/secondaryText"
+            android:textSize="18dp" />
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/tvUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorPrimaryDark"
+            app:met_floatingLabel="normal"
+            app:met_maxCharacters="40" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/tvPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/colorPrimaryDark"
+            app:met_floatingLabel="normal"
+            app:met_maxCharacters="20" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:fontFamily="@font/open_sans"
+            android:text="MASUK"
+            android:textColor="@color/textIcon" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:textAlignment="center"
+                android:text="@string/copyy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

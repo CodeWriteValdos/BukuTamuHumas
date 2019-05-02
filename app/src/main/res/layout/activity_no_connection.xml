@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NoConnectionActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_marginTop="100dp"
+        android:id="@+id/barcodeAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:lottie_fileName="antenna.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        />
+
+    <TextView
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="@font/righteous"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:text="Tidak ada koneksi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Cek koneksi anda dan mulai ulang aplikasi"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/btnCheck"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/textIcon"
+            android:background="@color/colorPrimaryDark"
+            android:text="MULAI ULANG"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

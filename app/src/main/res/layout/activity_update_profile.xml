@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UpdateProfileActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/ToolbarUpdate"
+        app:titleTextColor="@color/textIcon"
+        app:title="Edit Profile"
+        >
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_marginTop="40dp"
+            android:id="@+id/tveName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:hint="Nama"
+            android:textColor="@color/colorPrimaryDark"
+            android:inputType="textPersonName"
+            app:met_maxCharacters="20"
+            app:met_floatingLabel="normal"
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/tveNohp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:hint="Nohp"
+            android:textColor="@color/colorPrimaryDark"
+            android:inputType="number"
+            app:met_minCharacters="11"
+            app:met_floatingLabel="normal"
+            />
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:textColor="@color/textIcon"
+            android:text="Simpan perubahan"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

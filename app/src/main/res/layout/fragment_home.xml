@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".HomeFragment">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_marginTop="50dp"
+        android:id="@+id/barcodeAnimation"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="200dp"
+        app:lottie_fileName="scan_qr_code_success.json"
+        app:lottie_loop="false"
+        app:lottie_scale="1"
+        android:layout_marginLeft="40dp"
+        app:lottie_progress="10"
+        app:lottie_autoPlay="true"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_light"
+        android:text="@string/temukan_laporkan"
+        android:textAlignment="center"
+        android:textColor="@color/primaryText"
+        android:textSize="30dp" />
+    <TextView
+        android:fontFamily="@font/open_sans"
+        android:textColor="@color/secondaryText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Scan QRCODE Barang dan ketahui siapa pemiliknya"
+        />
+
+    <Button
+        android:id="@+id/goScan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="Scan Barang"
+        android:textColor="@color/textIcon"
+        android:textStyle="bold" />
+</LinearLayout>

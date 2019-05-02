@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/HomeToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+        <TextView
+            android:textColor="@color/textIcon"
+            android:textSize="20dp"
+            android:fontFamily="@font/righteous"
+            android:text="Cariin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.Toolbar>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_marginTop="100dp"
+        android:id="@+id/barcodeAnimation"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        app:lottie_fileName="scan_qr_code_success.json"
+        app:lottie_loop="false"
+        app:lottie_scale="1"
+        android:layout_marginLeft="40dp"
+        app:lottie_progress="10"
+        app:lottie_autoPlay="true"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_light"
+        android:text="@string/temukan_laporkan"
+        android:textAlignment="center"
+        android:textColor="@color/textIcon"
+        android:textSize="30dp" />
+    <TextView
+        android:fontFamily="@font/open_sans"
+        android:textColor="@color/LightPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Scan QRCODE Barang dan ketahui siapa pemiliknya"
+        />
+
+    <Button
+        android:id="@+id/btnScan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@color/textIcon"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="Scan Barang"
+        android:textColor="@color/primaryText"
+        android:textStyle="bold" />
+    <RelativeLayout
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:textAlignment="center"
+            android:text="@string/copyy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textIcon"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfileActivity"
+    android:background="@color/textIcon"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/ToolbarProfile"
+            app:titleTextColor="@color/textIcon"
+            >
+
+        </android.support.v7.widget.Toolbar>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:background="@color/colorPrimaryDark"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginTop="40dp"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/userdefault"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/imageUser"
+                />
+            <TextView
+                android:textColor="@color/textIcon"
+                android:layout_marginTop="10dp"
+                android:textSize="24dp"
+                android:id="@+id/tvName"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textAlignment="center"
+                android:text="Name of User"
+                android:layout_below="@id/imageUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:fontFamily="@font/quicksand_light"
+                android:text="Info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"/>
+            <View
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eee"></View>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nomer Handphone"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="@color/colorPrimaryDark"
+                />
+            <TextView
+                android:id="@+id/tvHp"
+                android:text="Nomor belum di setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"/>
+            <View
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eee"></View>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="@color/colorPrimaryDark"
+                />
+            <TextView
+                android:id="@+id/tvEmail"
+                android:text="YourSample@mail.com"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"/>
+            <View
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eee"></View>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            >
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/textIcon"
+                android:background="@color/colorPrimaryDark"
+                android:text="Edit Profile"
+                android:fontFamily="@font/open_sans_semibold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
